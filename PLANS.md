@@ -7,7 +7,7 @@
 - PHASE 3 — BRAND STRATEGY — ✅ DONE (2026-10-18; docs/BRAND.md v2 + docs/AUDIENCE.md v2; commit «PHASE 3 — BRAND STRATEGY COMPLETED»)
 - PHASE 4 — INFORMATION ARCHITECTURE — ✅ DONE (2026-10-18; docs/INFORMATION_ARCHITECTURE.md + docs/UX.md; commit «PHASE 4 — INFORMATION ARCHITECTURE COMPLETED»)
 - PHASE 5 — DESIGN DIRECTION — ✅ APPROVED (2026-10-18; направление A + эмоциональный слой B; commit «PHASE 5 — DESIGN DIRECTION APPROVED»)
-- PHASE 6 — WIREFRAMES — ✅ DONE (2026-10-18; docs/PHASE_6_WIREFRAMES.md; commit «PHASE 6 — WIREFRAMES COMPLETED»)
+- PHASE 6 — WIREFRAMES — ✅ DONE (2026-10-18; docs/PHASE_6_WIREFRAMES.md + docs/PHASE_6_VISUAL_PROTOTYPE_REVIEW.md; commits «PHASE 6 — WIREFRAMES COMPLETED», «PHASE 6 — VISUAL PROTOTYPE REVIEW COMPLETED»)
 - PHASE 7 — PROTOTYPE — ⛔ GATE
 - PHASE 8 — FRONTEND IMPLEMENTATION — ⛔ GATE
 - PHASE 9 — CONTENT INTEGRATION — ⛔ GATE
@@ -45,6 +45,10 @@
 ## PHASE 6 — WIREFRAMES (GATE) — ✅ DONE 2026-10-18
 - OBJECTIVE: структура всех ключевых экранов до вёрстки: главная, hero ×2, каталог → категория → карточка, PDP, mobile, CTA-flow, фото-система, interaction, QC.
 - ФАКТ: docs/PHASE_6_WIREFRAMES.md. Порядок блоков главной уточнён (HERO → Материал → Craftsmanship → Избранные → Категории → Featured → Trust → CTA → Footer); два варианта hero (рекомендация B, A — под A/B-тест); карточка IMAGE→NAME→ID→SIZE→PRICE→CTA; PDP 10 обязательных блоков; mobile-first 9 элементов; фото-система TO SELECT/TO PRODUCE; interaction 10 эффектов; QC 8 критериев (2 предупреждения). Спорные: W1–W5. Требуют решения владельца: hero-вариант, избранные/featured (S7), публикация цен (S2), формулировки CTA (Q1), способ приёма заявок. HTML/CSS/JS, фото и Product Master не тронуты.
+
+## PHASE 6 — VISUAL PROTOTYPE REVIEW (контрольный подэтап) — ✅ DONE 2026-10-18
+- OBJECTIVE: показать визуально, как утверждённая IA + Design Direction выглядят ДО production. PROTOTYPE — NOT PRODUCTION.
+- ФАКТ: docs/PHASE_6_VISUAL_PROTOTYPE_REVIEW.md. Собрано 8 экранов на реальных фото: Home Desktop/Mobile, Catalog, Category (кухонные), PDP Desktop/Mobile (SN008), Hero A и Hero B. Только реальные фото проекта + утверждённый hero-ассет; недостающие кадры помечены PHOTO TO SELECT. Сравнение HERO A vs B (8 критериев, 1–10): A = 7.25, B = 8.25; рекомендация B (без выбора за владельца). Final review: 8/8 критериев. HTML/CSS/JS, фото и Product Master не тронуты; мокапы — локальные артефакты workspace (в репозиторий бинарники не передаются).
 
 ## PHASE 7 — PROTOTYPE (GATE)
 - OBJECTIVE: кликабельный прототип новой IA/дизайна (до внедрения в код).
