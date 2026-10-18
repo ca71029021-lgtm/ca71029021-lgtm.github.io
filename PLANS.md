@@ -6,7 +6,7 @@
 - PHASE 2 — COMPETITOR RESEARCH — ✅ DONE (2026-10-18; docs/COMPETITOR_RESEARCH.md + docs/COMPETITORS.md; commit «PHASE 2 — COMPETITOR RESEARCH COMPLETED»)
 - PHASE 3 — BRAND STRATEGY — ✅ DONE (2026-10-18; docs/BRAND.md v2 + docs/AUDIENCE.md v2; commit «PHASE 3 — BRAND STRATEGY COMPLETED»)
 - PHASE 4 — INFORMATION ARCHITECTURE — ✅ DONE (2026-10-18; docs/INFORMATION_ARCHITECTURE.md + docs/UX.md; commit «PHASE 4 — INFORMATION ARCHITECTURE COMPLETED»)
-- PHASE 5 — DESIGN DIRECTION — ✅ DONE (2026-10-18; docs/DESIGN_DIRECTION.md + docs/DESIGN-SYSTEM.md; commit «PHASE 5 — DESIGN DIRECTION COMPLETED»; финальный выбор направления — за владельцем)
+- PHASE 5 — DESIGN DIRECTION — ✅ APPROVED (2026-10-18; направление A + эмоциональный слой B; commit «PHASE 5 — DESIGN DIRECTION APPROVED»)
 - PHASE 6 — WIREFRAMES — (внутри PHASE 5/7)
 - PHASE 7 — PROTOTYPE — ⛔ GATE
 - PHASE 8 — FRONTEND IMPLEMENTATION — ⛔ GATE
@@ -37,9 +37,10 @@
 - OBJECTIVE: решает: остаёмся one-page или переходим на многостраничный (каталог → карточка изделия).
 - ФАКТ: одобрена гибридная многостраничная архитектура. OUTPUTS: docs/INFORMATION_ARCHITECTURE.md (sitemap, 2 сценария A/B + прямой вход, структура карточки, mobile IA, URL-структура, CTA-логика, спорные решения S1–S7), docs/UX.md. Каталог: 3 категории / 33 изделия (полки исключены решением владельца).
 
-## PHASE 5 — DESIGN DIRECTION (GATE) — ✅ DONE 2026-10-18
+## PHASE 5 — DESIGN DIRECTION (GATE) — ✅ APPROVED 2026-10-18
 - OBJECTIVE: визуальное направление v2 (типографика, сетка, фотоподача).
-- ФАКТ: разработаны 3 Art Direction (A — Editorial/Architectural, B — Natural/Tactile, C — Contemporary Luxury), сравнительная таблица 13 критериев, рекомендация A с теплом B (финальный выбор — за владельцем). OUTPUTS: docs/DESIGN_DIRECTION.md (hero-концепции, типографика, палитра HEX, сетка, photography direction, карточка/PDP, навигация, CTA, motion, mobile, a11y, premium-аудит, дифференциация), docs/DESIGN-SYSTEM.md (токены + компоненты). HTML/CSS/JS и фото не тронуты.
+- ФАКТ: разработаны 3 Art Direction (A — Editorial/Architectural, B — Natural/Tactile, C — Contemporary Luxury), сравнительная таблица 13 критериев. OUTPUTS: docs/DESIGN_DIRECTION.md (hero-концепции, типографика, палитра HEX, сетка, photography direction, карточка/PDP, навигация, CTA, motion, mobile, a11y, premium-аудит, дифференциация), docs/DESIGN-SYSTEM.md (токены + компоненты). HTML/CSS/JS и фото не тронуты.
+- УТВЕРЖДЕНИЕ: направление A — основа визуальной системы + эмоционально-тактильный слой B; C не используется. Кедр — визуальный герой. Типографика (Cormorant Garamond + Inter), цвета, grid, photography direction, motion — утверждены как проектная база с допуском уточнения. Открытыми остаются: публикация цен (S2), состав «избранных» (S7), формулировки CTA (Q1).
 
 ## PHASE 7 — PROTOTYPE (GATE)
 - OBJECTIVE: кликабельный прототип новой IA/дизайна (до внедрения в код).
