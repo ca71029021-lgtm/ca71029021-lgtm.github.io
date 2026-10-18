@@ -4,8 +4,8 @@
 - PHASE 0 — PROJECT ORIENTATION — ✅ DONE (2026-10-18)
 - PHASE 1 — PRODUCT & CONTENT AUDIT — ✅ DONE (2026-10-18; docs/PRODUCT_AUDIT.md; commit «PHASE 1 — PRODUCT MASTER AUDIT FINALIZED»)
 - PHASE 2 — COMPETITOR RESEARCH — ✅ DONE (2026-10-18; docs/COMPETITOR_RESEARCH.md + docs/COMPETITORS.md; commit «PHASE 2 — COMPETITOR RESEARCH COMPLETED»)
-- PHASE 3 — BRAND STRATEGY — ⛔ GATE (следующая; ждёт подтверждения владельца)
-- PHASE 4 — INFORMATION ARCHITECTURE — ⛔ GATE
+- PHASE 3 — BRAND STRATEGY — ✅ DONE (2026-10-18; docs/BRAND.md v2 + docs/AUDIENCE.md v2; commit «PHASE 3 — BRAND STRATEGY COMPLETED»)
+- PHASE 4 — INFORMATION ARCHITECTURE — ⛔ GATE (следующая; ждёт подтверждения владельца)
 - PHASE 5 — DESIGN DIRECTION — ⛔ GATE
 - PHASE 6 — WIREFRAMES — (внутри PHASE 5/7)
 - PHASE 7 — PROTOTYPE — ⛔ GATE
@@ -29,9 +29,9 @@
 - OBJECTIVE: 5–8 референсов premium handcrafted furniture; извлечь transferable patterns.
 - ФАКТ: исследовано 13 сайтов (IT/DK/UK/US/JP/FR). OUTPUTS: docs/COMPETITOR_RESEARCH.md (полный анализ), docs/COMPETITORS.md (сводка). NON-GOALS: копирование — соблюдено.
 
-## PHASE 3 — BRAND STRATEGY (GATE)
-- OBJECTIVE: уточнить позиционирование, tone of voice, отличие «Сибирь/Алтай».
-- OUTPUTS: обновление docs/BRAND.md.
+## PHASE 3 — BRAND STRATEGY (GATE) — ✅ DONE 2026-10-18
+- OBJECTIVE: позиционирование, essence, аудитория, journey, дифференциация, коммуникация.
+- ФАКТ: docs/BRAND.md v2 (позиционирование «материал первичен», ToV, brand story без выдумок, 8 gaps G1–G8, вопросы Q1–Q4), docs/AUDIENCE.md v2 (5 сегментов, приоритет 1–2). Открытые решения владельца: CTA, гарантия, публикация цен, месседж «единственный экземпляр».
 
 ## PHASE 4 — INFORMATION ARCHITECTURE (GATE)
 - OBJECTIVE: решает: остаёмся one-page или переходим на многостраничный (каталог → карточка изделия).
@@ -67,3 +67,4 @@
 | Публикация на служебном GitHub-аккаунте | открыт |
 | Контакты: телефон UNKNOWN; e-mail altaywoodslab@gmail.com — NEEDS CONFIRMATION | открыт |
 | Непроверенные цифры на сайте (450–500 лет, 3100 мм, 40–90 мм) — UNVERIFIED | открыт |
+| Факты бренда UNKNOWN: история мастерской, имена мастеров, гарантия, статусы изделий | открыт (gaps G3–G6 в BRAND.md) |
