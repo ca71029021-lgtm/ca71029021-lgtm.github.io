@@ -7,8 +7,8 @@
 - PHASE 3 — BRAND STRATEGY — ✅ DONE (2026-10-18; docs/BRAND.md v2 + docs/AUDIENCE.md v2; commit «PHASE 3 — BRAND STRATEGY COMPLETED»)
 - PHASE 4 — INFORMATION ARCHITECTURE — ✅ DONE (2026-10-18; docs/INFORMATION_ARCHITECTURE.md + docs/UX.md; commit «PHASE 4 — INFORMATION ARCHITECTURE COMPLETED»)
 - PHASE 5 — DESIGN DIRECTION — ✅ APPROVED (2026-10-18; направление A + эмоциональный слой B; commit «PHASE 5 — DESIGN DIRECTION APPROVED»)
-- PHASE 6 — WIREFRAMES — ✅ DONE (2026-10-18; docs/PHASE_6_WIREFRAMES.md + docs/PHASE_6_VISUAL_PROTOTYPE_REVIEW.md + docs/PHOTO_AUDIT.md; commits «PHASE 6 — WIREFRAMES COMPLETED», «PHASE 6 — VISUAL PROTOTYPE REVIEW COMPLETED», «PHOTO AUDIT — COMPLETED»)
-- PHASE 7 — PROTOTYPE — ⛔ GATE
+- PHASE 6 — WIREFRAMES + VISUAL PROTOTYPE + PHOTO AUDIT — ✅ APPROVED (2026-10-19; docs/PHASE_6_WIREFRAMES.md + docs/PHASE_6_VISUAL_PROTOTYPE_REVIEW.md + docs/PHOTO_AUDIT.md + docs/PHASE_6_APPROVAL.md; commits «PHASE 6 — WIREFRAMES COMPLETED», «PHASE 6 — VISUAL PROTOTYPE REVIEW COMPLETED», «PHOTO AUDIT — COMPLETED», «PHASE 6 — VISUAL PROTOTYPE AND PHOTO AUDIT APPROVED»)
+- PHASE 7 — PROTOTYPE — ⛔ GATE (ждёт отдельного подтверждения владельца)
 - PHASE 8 — FRONTEND IMPLEMENTATION — ⛔ GATE
 - PHASE 9 — CONTENT INTEGRATION — ⛔ GATE
 - PHASE 10 — QA — (внутри каждой фазы)
@@ -52,10 +52,15 @@
 
 ## PHASE 6 — PHOTO AUDIT (контрольный подэтап) — ✅ DONE 2026-10-19
 - OBJECTIVE: проанализировать реальную фототеку (33 папки изделий, 333 изображения) и выбрать рекомендованные фото по назначениям ДО PHASE 7. Только анализ; фото не изменялись/не удалялись/не переименовывались; AI-генерация не использовалась.
-- ФАКТ: docs/PHOTO_AUDIT.md. Главные фото рекомендованы для 32 из 33 изделий; SNS028 — критический разрыв (нет студийного кадра, только уличные фото на газоне и листы каталога со встроенным баннером) → TO PRODUCE/решение владельца. Выбраны: 5 кандидатов HERO (№1 — SNS033/_156.jpg), рабочий набор Selected (S002/SN008/SNS033), Featured (SNS033), макро Материала (S002/SN012/SNS033/SN008), тайлы категорий. Полностью отсутствуют: фото процесса/мастерской, интерьерные кадры, портрет мастера (TO PRODUCE). Ждёт 5 решений владельца (§7 PHOTO_AUDIT.md) и отдельного подтверждения старта PHASE 7. HTML/CSS/JS, фото и Product Master не тронуты.
+- ФАКТ: docs/PHOTO_AUDIT.md. Главные фото рекомендованы для 32 из 33 изделий; SNS028 — критический разрыв (нет студийного кадра, только уличные фото на газоне и листы каталога со встроенным баннером). Выбраны: 5 кандидатов HERO, рабочий набор Selected, Featured, макро Материала, тайлы категорий. Полностью отсутствуют: фото процесса/мастерской, интерьерные кадры, портрет мастера (TO PRODUCE). HTML/CSS/JS, фото и Product Master не тронуты.
+
+## PHASE 6 — APPROVAL (итоговое утверждение фазы) — ✅ APPROVED 2026-10-19
+- OBJECTIVE: зафиксировать все решения владельца перед PHASE 7 в одном документе.
+- ФАКТ: docs/PHASE_6_APPROVAL.md. Принято: HERO B — основной hero, HERO A — атмосферный блок; HERO PHOTO = SNS033/_156.jpg (PROVISIONAL / APPROVED FOR PROTOTYPE, замена допускается без изменения архитектуры); SELECTED PRODUCTS = S002/SN008/SNS033 (PROVISIONAL / APPROVED FOR PROTOTYPE); SNS028 — сохранён в каталоге, исключён из HERO/Featured/editorial/первого экрана (PHOTO GAP / NEEDS RESHOOT, не удалять); PHOTO TO PRODUCE не блокирует PHASE 7 (placeholder ≠ реальное фото); Photography Rule — только реальные фото, AI-generated запрещены; Google Drive не блокирует проект. Открытые решения (§12 APPROVAL): финальный HERO/Selected после production-like прототипа, способ приёма заявок, гарантия/«единственный экземпляр», контакты, съёмка TO PRODUCE + пересъёмка SNS028, подтверждение старта PHASE 7. HTML/CSS/JS, фото и Product Master не тронуты.
 
 ## PHASE 7 — PROTOTYPE (GATE)
 - OBJECTIVE: кликабельный прототип новой IA/дизайна (до внедрения в код).
+- СТАТУС: ⛔ ждёт отдельного подтверждения владельца (критическое правило).
 
 ## PHASE 8 — FRONTEND IMPLEMENTATION (GATE)
 - OBJECTIVE: внедрение поэтапно (по секциям), без переписывания всего сразу.
@@ -77,9 +82,9 @@
 | Цены/размеры: 33 публикуемых изделия VERIFIED (owner, «Каталог всех изделий.docx» 2026-10-18); полки исключены из публикации; высота не используется | закрыт (2026-10-18) |
 | Две параллельные системы ID (старая/новая) без подтверждённой привязки | открыт |
 | Фото изделий не отобраны вручную (главное фото = первое по алфавиту) | закрыт как риск (2026-10-19): рекомендованные главные фото — docs/PHOTO_AUDIT.md §3; финальное утверждение — за владельцем |
-| SNS028: нет пригодных фото (только уличные кадры и листы каталога с баннером) | открыт — TO PRODUCE, решение владельца (PHOTO_AUDIT.md §5, §7) |
+| SNS028: нет пригодных фото | решение принято (2026-10-19): сохранён в каталоге, исключён из HERO/Featured/editorial/первого экрана; NEEDS RESHOOT; изделие и фото не удалять (PHASE_6_APPROVAL.md §8) |
 | Публикация на служебном GitHub-аккаунте | открыт |
 | Контакты: телефон UNKNOWN; e-mail altaywoodslab@gmail.com — NEEDS CONFIRMATION | открыт |
 | Непроверенные цифры на сайте (450–500 лет, 3100 мм, 40–90 мм) — UNVERIFIED | открыт |
 | Факты бренда UNKNOWN: история мастерской, имена мастеров, гарантия, статусы изделий | открыт (gaps G3–G6 в BRAND.md) |
-| Нет фото процесса/мастерской, интерьерных кадров, портрета мастера (блоки Craftsmanship/История/Доверие) | открыт — TO PRODUCE (PHOTO_AUDIT.md §5) |
+| Нет фото процесса/мастерской, интерьерных кадров, портрета мастера (блоки Craftsmanship/История/Доверие) | открыт — TO PRODUCE; PHASE 7 НЕ блокирует (PHOTO_AUDIT.md §5, PHASE_6_APPROVAL.md §9) |
