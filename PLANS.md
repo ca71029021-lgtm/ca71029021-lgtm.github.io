@@ -7,8 +7,8 @@
 - PHASE 3 — BRAND STRATEGY — ✅ DONE (2026-10-18; docs/BRAND.md v2 + docs/AUDIENCE.md v2; commit «PHASE 3 — BRAND STRATEGY COMPLETED»)
 - PHASE 4 — INFORMATION ARCHITECTURE — ✅ DONE (2026-10-18; docs/INFORMATION_ARCHITECTURE.md + docs/UX.md; commit «PHASE 4 — INFORMATION ARCHITECTURE COMPLETED»)
 - PHASE 5 — DESIGN DIRECTION — ✅ APPROVED (2026-10-18; направление A + эмоциональный слой B; commit «PHASE 5 — DESIGN DIRECTION APPROVED»)
-- PHASE 6 — WIREFRAMES + VISUAL PROTOTYPE + PHOTO AUDIT — ✅ APPROVED (2026-10-19; docs/PHASE_6_WIREFRAMES.md + docs/PHASE_6_VISUAL_PROTOTYPE_REVIEW.md + docs/PHOTO_AUDIT.md + docs/PHASE_6_APPROVAL.md; commits «PHASE 6 — WIREFRAMES COMPLETED», «PHASE 6 — VISUAL PROTOTYPE REVIEW COMPLETED», «PHOTO AUDIT — COMPLETED», «PHASE 6 — VISUAL PROTOTYPE AND PHOTO AUDIT APPROVED»)
-- PHASE 7 — PROTOTYPE — ⛔ GATE (ждёт отдельного подтверждения владельца)
+- PHASE 6 — WIREFRAMES + VISUAL PROTOTYPE + PHOTO AUDIT — ✅ APPROVED (2026-10-19; docs/PHASE_6_WIREFRAMES.md + docs/PHASE_6_VISUAL_PROTOTYPE_REVIEW.md + docs/PHOTO_AUDIT.md + docs/PHASE_6_APPROVAL.md; commits «PHASE 6 — WIREFRAMES COMPLETED», «PHASE 6 — VISUAL PROTOTYPE REVIEW COMPLETED», «PHOTO AUDIT — COMPLETED», «PHASE 6 — VISUAL PROTOTYPE AND PHOTO AUDIT APPROVED», «PROJECT CONTACTS AND INQUIRY RULES — APPROVED»)
+- PHASE 7 — PROTOTYPE — ▶ APPROVED FOR START (2026-10-19; initial version; форма prototype-only; после первой версии — остановка на утверждение; commit «PROJECT CONTACTS AND INQUIRY RULES — APPROVED»)
 - PHASE 8 — FRONTEND IMPLEMENTATION — ⛔ GATE
 - PHASE 9 — CONTENT INTEGRATION — ⛔ GATE
 - PHASE 10 — QA — (внутри каждой фазы)
@@ -56,11 +56,16 @@
 
 ## PHASE 6 — APPROVAL (итоговое утверждение фазы) — ✅ APPROVED 2026-10-19
 - OBJECTIVE: зафиксировать все решения владельца перед PHASE 7 в одном документе.
-- ФАКТ: docs/PHASE_6_APPROVAL.md. Принято: HERO B — основной hero, HERO A — атмосферный блок; HERO PHOTO = SNS033/_156.jpg (PROVISIONAL / APPROVED FOR PROTOTYPE, замена допускается без изменения архитектуры); SELECTED PRODUCTS = S002/SN008/SNS033 (PROVISIONAL / APPROVED FOR PROTOTYPE); SNS028 — сохранён в каталоге, исключён из HERO/Featured/editorial/первого экрана (PHOTO GAP / NEEDS RESHOOT, не удалять); PHOTO TO PRODUCE не блокирует PHASE 7 (placeholder ≠ реальное фото); Photography Rule — только реальные фото, AI-generated запрещены; Google Drive не блокирует проект. Открытые решения (§12 APPROVAL): финальный HERO/Selected после production-like прототипа, способ приёма заявок, гарантия/«единственный экземпляр», контакты, съёмка TO PRODUCE + пересъёмка SNS028, подтверждение старта PHASE 7. HTML/CSS/JS, фото и Product Master не тронуты.
+- ФАКТ: docs/PHASE_6_APPROVAL.md. Принято: HERO B — основной hero, HERO A — атмосферный блок; HERO PHOTO = SNS033/_156.jpg (PROVISIONAL / APPROVED FOR PROTOTYPE, замена допускается без изменения архитектуры сайта); SELECTED PRODUCTS = S002/SN008/SNS033 (PROVISIONAL / APPROVED FOR PROTOTYPE); SNS028 — сохранён в каталоге, исключён из HERO/Featured/editorial/первого экрана (PHOTO GAP / NEEDS RESHOOT, не удалять); PHOTO TO PRODUCE не блокирует PHASE 7 (placeholder ≠ реальное фото); Photography Rule — только реальные фото, AI-generated запрещены; Google Drive не блокирует проект. HTML/CSS/JS, фото и Product Master не тронуты.
 
-## PHASE 7 — PROTOTYPE (GATE)
+## PHASE 6 — OPEN QUESTIONS RESOLVED (контрольный подэтап) — ✅ DONE 2026-10-19
+- OBJECTIVE: закрыть открытые вопросы проекта перед стартом PHASE 7.
+- ФАКТ: решения владельца зафиксированы в docs/PHASE_6_APPROVAL.md §14 и docs/CONTENT-RULES.md (новый файл), обновлены docs/UX.md. Итоги: (1) приём заявок — основной: форма на сайте; доп.: e-mail; messenger — NEEDS CONFIRMATION (не фиксировать канал); форма минимальная: имя/телефон/e-mail/изделие/сообщение. (2) «Единственный экземпляр» — не под изделиями и не badge; один отдельный смысловой раздел. (3) Контакты: e-mail ЗАМЕНЁН на Siberian.slab@gmail.com (во всех новых элементах; старый — только исторический); телефон — PHONE NEEDS CONFIRMATION (подтверждённый номер в материалах проекта не найден, не выдумывать). (4) Текущие фото временные, замена на студийные позже (этап PHOTO REPLACEMENT / PHOTO FINALIZATION); не удалять/не редактировать/не генерировать. (5) Путь HOME→CATALOG→PRODUCT→INQUIRY (+ HOME→CONTACT); CTA: hero «Смотреть коллекцию», каталог «Смотреть изделие», PDP «Оставить заявку на это изделие»; e-mail в Footer и Contact. (6) Запрет придумывать коммерческие/юридические утверждения. (7) PHASE 7 разрешён: initial version, форма prototype-only, после первой версии — остановка на утверждение.
+
+## PHASE 7 — PROTOTYPE (GATE) — ▶ APPROVED FOR START 2026-10-19
 - OBJECTIVE: кликабельный прототип новой IA/дизайна (до внедрения в код).
-- СТАТУС: ⛔ ждёт отдельного подтверждения владельца (критическое правило).
+- УСЛОВИЯ СТАРТА (владелец): новый e-mail; телефон не публиковать выдуманный (NEEDS CONFIRMATION); форма заявки prototype-only; messenger — NEEDS CONFIRMATION; «единственный экземпляр» — отдельный раздел, не под изделиями; текущие фото временные с предусмотренной заменой.
+- СТОП-ПРАВИЛО: после завершения первой версии — остановка и представление результата владельцем; автоматический переход к production development запрещён.
 
 ## PHASE 8 — FRONTEND IMPLEMENTATION (GATE)
 - OBJECTIVE: внедрение поэтапно (по секциям), без переписывания всего сразу.
@@ -84,7 +89,7 @@
 | Фото изделий не отобраны вручную (главное фото = первое по алфавиту) | закрыт как риск (2026-10-19): рекомендованные главные фото — docs/PHOTO_AUDIT.md §3; финальное утверждение — за владельцем |
 | SNS028: нет пригодных фото | решение принято (2026-10-19): сохранён в каталоге, исключён из HERO/Featured/editorial/первого экрана; NEEDS RESHOOT; изделие и фото не удалять (PHASE_6_APPROVAL.md §8) |
 | Публикация на служебном GitHub-аккаунте | открыт |
-| Контакты: телефон UNKNOWN; e-mail altaywoodslab@gmail.com — NEEDS CONFIRMATION | открыт |
+| Контакты | частично закрыт (2026-10-19): e-mail VERIFIED = Siberian.slab@gmail.com (заменил прежний; прежний — только исторический); телефон — PHONE NEEDS CONFIRMATION (подтверждённый номер в материалах проекта не найден; не выдумывать); messenger — NEEDS CONFIRMATION |
 | Непроверенные цифры на сайте (450–500 лет, 3100 мм, 40–90 мм) — UNVERIFIED | открыт |
 | Факты бренда UNKNOWN: история мастерской, имена мастеров, гарантия, статусы изделий | открыт (gaps G3–G6 в BRAND.md) |
 | Нет фото процесса/мастерской, интерьерных кадров, портрета мастера (блоки Craftsmanship/История/Доверие) | открыт — TO PRODUCE; PHASE 7 НЕ блокирует (PHOTO_AUDIT.md §5, PHASE_6_APPROVAL.md §9) |
