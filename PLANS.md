@@ -8,7 +8,7 @@
 - PHASE 4 — INFORMATION ARCHITECTURE — ✅ DONE (2026-10-18; docs/INFORMATION_ARCHITECTURE.md + docs/UX.md; commit «PHASE 4 — INFORMATION ARCHITECTURE COMPLETED»)
 - PHASE 5 — DESIGN DIRECTION — ✅ APPROVED (2026-10-18; направление A + эмоциональный слой B; commit «PHASE 5 — DESIGN DIRECTION APPROVED»)
 - PHASE 6 — WIREFRAMES + VISUAL PROTOTYPE + PHOTO AUDIT — ✅ APPROVED (2026-10-19; docs/PHASE_6_WIREFRAMES.md + docs/PHASE_6_VISUAL_PROTOTYPE_REVIEW.md + docs/PHOTO_AUDIT.md + docs/PHASE_6_APPROVAL.md; commits «PHASE 6 — WIREFRAMES COMPLETED», «PHASE 6 — VISUAL PROTOTYPE REVIEW COMPLETED», «PHOTO AUDIT — COMPLETED», «PHASE 6 — VISUAL PROTOTYPE AND PHOTO AUDIT APPROVED», «PROJECT CONTACTS AND INQUIRY RULES — APPROVED»)
-- PHASE 7 — PROTOTYPE — ▶ APPROVED FOR START (2026-10-19; initial version; форма prototype-only; после первой версии — остановка на утверждение; commit «PROJECT CONTACTS AND INQUIRY RULES — APPROVED»)
+- PHASE 7 — PROTOTYPE — ▶ INITIAL VERSION СОБРАНА (2026-10-19); остановка на утверждении правок владельца; эксперимент по унификации фона отклонён (2026-10-26, см. подэтап ниже); commit «PROJECT CONTACTS AND INQUIRY RULES — APPROVED»
 - PHASE 8 — FRONTEND IMPLEMENTATION — ⛔ GATE
 - PHASE 9 — CONTENT INTEGRATION — ⛔ GATE
 - PHASE 10 — QA — (внутри каждой фазы)
@@ -62,10 +62,17 @@
 - OBJECTIVE: закрыть открытые вопросы проекта перед стартом PHASE 7.
 - ФАКТ: решения владельца зафиксированы в docs/PHASE_6_APPROVAL.md §14 и docs/CONTENT-RULES.md (новый файл), обновлены docs/UX.md. Итоги: (1) приём заявок — основной: форма на сайте; доп.: e-mail; messenger — NEEDS CONFIRMATION (не фиксировать канал); форма минимальная: имя/телефон/e-mail/изделие/сообщение. (2) «Единственный экземпляр» — не под изделиями и не badge; один отдельный смысловой раздел. (3) Контакты: e-mail ЗАМЕНЁН на Siberian.slab@gmail.com (во всех новых элементах; старый — только исторический); телефон — PHONE NEEDS CONFIRMATION (подтверждённый номер в материалах проекта не найден, не выдумывать). (4) Текущие фото временные, замена на студийные позже (этап PHOTO REPLACEMENT / PHOTO FINALIZATION); не удалять/не редактировать/не генерировать. (5) Путь HOME→CATALOG→PRODUCT→INQUIRY (+ HOME→CONTACT); CTA: hero «Смотреть коллекцию», каталог «Смотреть изделие», PDP «Оставить заявку на это изделие»; e-mail в Footer и Contact. (6) Запрет придумывать коммерческие/юридические утверждения. (7) PHASE 7 разрешён: initial version, форма prototype-only, после первой версии — остановка на утверждение.
 
-## PHASE 7 — PROTOTYPE (GATE) — ▶ APPROVED FOR START 2026-10-19
+## PHASE 7 — PROTOTYPE (GATE) — ▶ INITIAL VERSION СОБРАНА 2026-10-19; ОСТАНОВКА НА УТВЕРЖДЕНИИ
 - OBJECTIVE: кликабельный прототип новой IA/дизайна (до внедрения в код).
 - УСЛОВИЯ СТАРТА (владелец): новый e-mail; телефон не публиковать выдуманный (NEEDS CONFIRMATION); форма заявки prototype-only; messenger — NEEDS CONFIRMATION; «единственный экземпляр» — отдельный раздел, не под изделиями; текущие фото временные с предусмотренной заменой.
-- СТОП-ПРАВИЛО: после завершения первой версии — остановка и представление результата владельцем; автоматический переход к production development запрещён.
+- ФАКТ: собрана initial version (40 страниц: index, catalog с фильтром, 3 категории, 33 PDP, inquiry prototype-only, contacts; новый e-mail Siberian.slab@gmail.com; телефон — PHONE NEEDS CONFIRMATION; messenger — NEEDS CONFIRMATION; «единственный экземпляр» — один смысловой раздел; SNS028 — карточка-заглушка «Фотография готовится»). Превью: http://localhost:7100/ (корень прототипа — workspace proto7).
+- СТОП-ПРАВИЛО: после завершения первой версии — остановка и представление результата владельцем; автоматический переход к production development запрещён. Действует: ждём правок владельца.
+
+## PHASE 7 — PHOTO PROCESSING EXPERIMENT (контрольный подэтап) — ❌ REJECTED 2026-10-26
+- OBJECTIVE (первоначальный): проверить на 4 эталонных изделиях единообразную фоновую обработку фото для каталога.
+- ФАКТ: эксперимент ОТКЛОНЁН решением владельца. Принцип зафиксирован: AUTHENTICITY > UNIFORMITY. Массовая обработка фототеки запрещена. Оригиналы — PRIMARY SOURCE: не удалять, не изменять, не переименовывать. Допустима только техническая подготовка: resize, compression, форматирование, аккуратное кадрирование, очень лёгкая коррекция экспозиции/баланса белого. Будущие студийные фото автоматически не обрабатываются.
+- ПОДТВЕРЖДЕНИЕ ПРОТОТИПА: прототип proto7 использует только ресайз-копии оригиналов (яркость деривативов совпадает с оригиналами; программная проверка 2026-10-26); экспериментальные версии в прототип не подключались и не подключаются.
+- OUTPUTS: docs/PHOTO_PROCESSING_STANDARD.md — шапка переведена в REJECTED (commit «PHOTO PROCESSING EXPERIMENT — REJECTED»); docs/PHOTO_AUDIT.md — дополнение в шапке про AUTHENTICITY > UNIFORMITY (commit «ORIGINAL PHOTOS — PRIMARY SOURCE»). Артефакты отклонённого эксперимента (12 файлов BEFORE/AFTER в processed\preview) сохранены локально, не удалены, не переданы в репозиторий.
 
 ## PHASE 8 — FRONTEND IMPLEMENTATION (GATE)
 - OBJECTIVE: внедрение поэтапно (по секциям), без переписывания всего сразу.
@@ -93,3 +100,4 @@
 | Непроверенные цифры на сайте (450–500 лет, 3100 мм, 40–90 мм) — UNVERIFIED | открыт |
 | Факты бренда UNKNOWN: история мастерской, имена мастеров, гарантия, статусы изделий | открыт (gaps G3–G6 в BRAND.md) |
 | Нет фото процесса/мастерской, интерьерных кадров, портрета мастера (блоки Craftsmanship/История/Доверие) | открыт — TO PRODUCE; PHASE 7 НЕ блокирует (PHOTO_AUDIT.md §5, PHASE_6_APPROVAL.md §9) |
+| Обработка фототеки (унификация фона) | отклонена владельцем (2026-10-26): принцип AUTHENTICITY > UNIFORMITY; допустима только техническая подготовка (resize/compression/форматирование/аккуратное кадрирование/очень лёгкая коррекция экспозиции/WB); оригиналы — PRIMARY SOURCE; будущие студийные фото автоматически не обрабатываются (docs/PHOTO_PROCESSING_STANDARD.md — REJECTED) |
