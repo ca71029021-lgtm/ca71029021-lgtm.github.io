@@ -8,7 +8,7 @@
 - PHASE 4 — INFORMATION ARCHITECTURE — ✅ DONE (2026-10-18; docs/INFORMATION_ARCHITECTURE.md + docs/UX.md; commit «PHASE 4 — INFORMATION ARCHITECTURE COMPLETED»)
 - PHASE 5 — DESIGN DIRECTION — ✅ APPROVED (2026-10-18; направление A + эмоциональный слой B; commit «PHASE 5 — DESIGN DIRECTION APPROVED»)
 - PHASE 6 — WIREFRAMES + VISUAL PROTOTYPE + PHOTO AUDIT — ✅ APPROVED (2026-10-19; docs/PHASE_6_WIREFRAMES.md + docs/PHASE_6_VISUAL_PROTOTYPE_REVIEW.md + docs/PHOTO_AUDIT.md + docs/PHASE_6_APPROVAL.md; commits «PHASE 6 — WIREFRAMES COMPLETED», «PHASE 6 — VISUAL PROTOTYPE REVIEW COMPLETED», «PHOTO AUDIT — COMPLETED», «PHASE 6 — VISUAL PROTOTYPE AND PHOTO AUDIT APPROVED», «PROJECT CONTACTS AND INQUIRY RULES — APPROVED»)
-- PHASE 7 — PROTOTYPE — ▶ REFINEMENT ВЫПОЛНЕН (2026-10-26); остановка на визуальном утверждении владельца; эксперимент по унификации фона отклонён (2026-10-26); commit «PHASE 7 — VISUAL AND UX REFINEMENT COMPLETED»
+- PHASE 7 — PROTOTYPE — ▶ REFINEMENT ВЫПОЛНЕН + HOME VARIANT B СОБРАН (2026-10-26); остановка на визуальном утверждении владельца; эксперимент по унификации фона отклонён (2026-10-26); commits «PHASE 7 — VISUAL AND UX REFINEMENT COMPLETED», «PHASE 7 — HOME VARIANT B — NATURE COVER»
 - PHASE 8 — FRONTEND IMPLEMENTATION — ⛔ GATE
 - PHASE 9 — CONTENT INTEGRATION — ⛔ GATE
 - PHASE 10 — QA — (внутри каждой фазы)
@@ -77,6 +77,10 @@
 ## PHASE 7 — VISUAL & UX REFINEMENT (контрольный подэтап) — ✅ DONE 2026-10-26; ОСТАНОВКА НА УТВЕРЖДЕНИИ
 - OBJECTIVE: улучшить существующий прототип по направлению MORE EDITORIAL / LESS UI без перехода к production и без изменения утверждённой IA.
 - ФАКТ: docs/PHASE_7_REFINEMENT.md. Навигация упрощена (Главная · Каталог · Материал · Контакты; категории — вторичный уровень); карточки без белых плашек, Product ID вторичен; фильтр каталога переведён из pill-кнопок в editorial-стиль; на PDP добавлен sticky primary CTA на mobile (≤767px) + touch-targets ≥44px; «Мастерская в Новосибирске» (неподтверждено) заменено на NEEDS CONFIRMATION во всех 40 страницах; taiga.png (4,3 МБ) → производная taiga.jpg (469 КБ, оригинал не изменён); добавлены focus-visible стили и Escape для мобильного меню. Проверено: 40/40 страниц HTTP 200, путь HOME→CATALOG→CATEGORY→PRODUCT→INQUIRY пройден, desktop+mobile проверены скриншотами, предзаполнение формы работает. STOP GATE: PHASE 8 не начинался, публикации не было; ждём визуального утверждения владельца. Фото и Product Master не тронуты.
+
+## PHASE 7 — HOME VARIANT B — NATURE COVER (контрольный подэтап) — ✅ DONE 2026-10-26; ОСТАНОВКА НА УТВЕРЖДЕНИИ
+- OBJECTIVE: новый вариант первой страницы HOME по концепции владельца NATURE → BRAND → FURNITURE; работа только с HOME; A/B с текущим HOME (index.html сохранён, вариант — home-variant-b.html).
+- ФАКТ: docs/PHASE_7_HOME_VARIANT_B.md. Сцена 1 — fullscreen-оригинал SNS.jpeg (лес + река + логотип; побайтовая копия, SHA-256 совпадает; только CSS object-fit/object-position; логотип на mobile не обрезается — центрическая композиция); сцена 2 — SNS033 (утверждённый Hero Product; assets/SNS033_0.jpg; VERIFIED данные; CTA «Смотреть изделие»); сцена 3 — editorial-строки коллекции; сцена 4 — контакт. Header прозрачный поверх сцены, светлый текст; без видео/анимации логотипа; без «единственный экземпляр» под изделием. Визуальные скриншоты не сняты (панель скрыта) — проверено DOM + HTTP; финальный осмотр за владельцем. Остальные страницы, IA, Product Master, Design System, Content Rules не менялись. STOP GATE действует: ждём решения о принятии VARIANT B.
 
 ## PHASE 8 — FRONTEND IMPLEMENTATION (GATE)
 - OBJECTIVE: внедрение поэтапно (по секциям), без переписывания всего сразу.
