@@ -8,7 +8,7 @@
 - PHASE 4 — INFORMATION ARCHITECTURE — ✅ DONE (2026-10-18; docs/INFORMATION_ARCHITECTURE.md + docs/UX.md; commit «PHASE 4 — INFORMATION ARCHITECTURE COMPLETED»)
 - PHASE 5 — DESIGN DIRECTION — ✅ APPROVED (2026-10-18; направление A + эмоциональный слой B; commit «PHASE 5 — DESIGN DIRECTION APPROVED»)
 - PHASE 6 — WIREFRAMES + VISUAL PROTOTYPE + PHOTO AUDIT — ✅ APPROVED (2026-10-19; docs/PHASE_6_WIREFRAMES.md + docs/PHASE_6_VISUAL_PROTOTYPE_REVIEW.md + docs/PHOTO_AUDIT.md + docs/PHASE_6_APPROVAL.md; commits «PHASE 6 — WIREFRAMES COMPLETED», «PHASE 6 — VISUAL PROTOTYPE REVIEW COMPLETED», «PHOTO AUDIT — COMPLETED», «PHASE 6 — VISUAL PROTOTYPE AND PHOTO AUDIT APPROVED», «PROJECT CONTACTS AND INQUIRY RULES — APPROVED»)
-- PHASE 7 — PROTOTYPE — ▶ REFINEMENT ВЫПОЛНЕН + HOME VARIANT B СОБРАН (2026-10-26) + NATURE COVER УТВЕРЖДЁН В ВАРИАНТЕ B2 (2026-11-07) + QC REVIEW PASSED WITH NOTES (2026-11-07; docs/PHASE_7_QC_REVIEW.md) + FINAL REVIEW В ПРОЦЕССЕ (финальная главная = B2, 2026-11-07); остановка на визуальном утверждении владельца; эксперимент по унификации фона отклонён (2026-10-26); commits «PHASE 7 — VISUAL AND UX REFINEMENT COMPLETED», «PHASE 7 — HOME VARIANT B — NATURE COVER», «PHASE 7 — NATURE COVER B2 APPROVED», «PHASE 7 — QC REVIEW COMPLETED»
+- PHASE 7 — PROTOTYPE — ▶ REFINEMENT ВЫПОЛНЕН + HOME VARIANT B СОБРАН (2026-10-26) + NATURE COVER УТВЕРЖДЁН В ВАРИАНТЕ B2 (2026-11-07) + QC REVIEW PASSED WITH NOTES (2026-11-07; docs/PHASE_7_QC_REVIEW.md) + FINAL REVIEW В ПРОЦЕССЕ (финальная главная = B2, сцены 1–4 утверждены/отредактированы 2026-11-07/08); остановка на визуальном утверждении владельца; эксперимент по унификации фона отклонён (2026-10-26); commits «PHASE 7 — VISUAL AND UX REFINEMENT COMPLETED», «PHASE 7 — HOME VARIANT B — NATURE COVER», «PHASE 7 — NATURE COVER B2 APPROVED», «PHASE 7 — QC REVIEW COMPLETED»
 - PHASE 8 — FRONTEND IMPLEMENTATION — ⛔ GATE
 - PHASE 9 — CONTENT INTEGRATION — ⛔ GATE
 - PHASE 10 — QA — (внутри каждой фазы)
@@ -98,7 +98,8 @@
 - OBJECTIVE: просмотр прототипа владельцем по чек-листу docs/PHASE_7_FINAL_REVIEW_CHECKLIST.md; сбор решений для утверждения PHASE 7.
 - РЕШЕНИЕ 2026-11-07 (владелец, чек-лист п.1): финальная главная = ВАРИАНТ B2 (Nature Cover). home-variant-b.html стал index.html (title приведён к основному, «Главная» в навигации подсвечена, из футера убрана пометка VARIANT B); прежняя главная сохранена как home-variant-a.html (решение обратимо); home-variant-b.html оставлен как архивная копия варианта.
 - СЛЕДСТВИЕ (техисправление, Категория A): у B2 нет секции #material — создана отдельная страница material.html из существующего контента варианта A (разделы «Материал», атмосферный блок тайги, «Производство» с 3 PHOTO TO PRODUCE); ссылки «Материал» в навигации всех 42 страниц переписаны с index.html#material на material.html. Повторный аудит: 43 страницы, битых ссылок/якорей/изображений — 0; material.html — HTTP 200, все изображения загружаются.
-- Остальные пункты чек-листа (2–10) — ждут решений владельца.
+- РЕШЕНИЯ 2026-11-08 (владелец, чек-лист п.2 — главная B2): сцена 1 (Nature Cover) — утверждена без изменений. Сцена 2 — фото заменено на реальное фото владельца 174.jpg из папки изделия SNS033 (веб-копия assets/SNS033_174.jpg, 1600px / 174 КБ; оригинал не изменён). Сцена 3 — заголовок «Три категории» убран; остались kicker «Коллекция», три строки категорий, «Смотреть коллекцию →». Сцена 4 — добавлена кнопка-заглушка «ВКонтакте — NEEDS CONFIRMATION» (реальной страницы VK пока нет, неактивна; активировать после получения URL).
+- Остальные пункты чек-листа (3–10) — ждут решений владельца.
 
 ## PHASE 8 — FRONTEND IMPLEMENTATION (GATE)
 - OBJECTIVE: внедрение поэтапно (по секциям), без переписывания всего сразу.
@@ -122,7 +123,7 @@
 | Фото изделий не отобраны вручную (главное фото = первое по алфавиту) | закрыт как риск (2026-10-19): рекомендованные главные фото — docs/PHOTO_AUDIT.md §3; финальное утверждение — за владельцем |
 | SNS028: нет пригодных фото | решение принято (2026-10-19): сохранён в каталоге, исключён из HERO/Featured/editorial/первого экрана; NEEDS RESHOOT; изделие и фото не удалять (PHASE_6_APPROVAL.md §8) |
 | Публикация на служебном GitHub-аккаунте | открыт |
-| Контакты | частично закрыт (2026-10-19): e-mail VERIFIED = Siberian.slab@gmail.com (заменил прежний; прежний — только исторический); телефон — PHONE NEEDS CONFIRMATION (подтверждённый номер в материалах проекта не найден; не выдумывать); messenger — NEEDS CONFIRMATION. География мастерской — NEEDS CONFIRMATION (2026-10-26, п.18 PHASE 7 refinement) |
+| Контакты | частично закрыт (2026-10-19): e-mail VERIFIED = Siberian.slab@gmail.com (заменил прежний; прежний — только исторический); телефон — PHONE NEEDS CONFIRMATION (подтверждённый номер в материалах проекта не найден; не выдумывать); messenger — NEEDS CONFIRMATION; VK планируется, страницы пока нет — кнопка-заглушка на главной (2026-11-08). География мастерской — NEEDS CONFIRMATION (2026-10-26, п.18 PHASE 7 refinement) |
 | Непроверенные цифры на сайте (450–500 лет, 3100 мм, 40–90 мм) — UNVERIFIED | открыт (в прототипе proto7 отсутствуют; остались только на старом опубликованном лендинге — снимается при замене публикации) |
 | Факты бренда UNKNOWN: история мастерской, имена мастеров, гарантия, статусы изделий | открыт (gaps G3–G6 в BRAND.md) |
 | Нет фото процесса/мастерской, интерьерных кадров, портрета мастера (блоки Craftsmanship/История/Доверие) | открыт — TO PRODUCE; PHASE 7 НЕ блокирует (PHOTO_AUDIT.md §5, PHASE_6_APPROVAL.md §9) |
