@@ -8,7 +8,7 @@
 - PHASE 4 — INFORMATION ARCHITECTURE — ✅ DONE (2026-10-18; docs/INFORMATION_ARCHITECTURE.md + docs/UX.md; commit «PHASE 4 — INFORMATION ARCHITECTURE COMPLETED»)
 - PHASE 5 — DESIGN DIRECTION — ✅ APPROVED (2026-10-18; направление A + эмоциональный слой B; commit «PHASE 5 — DESIGN DIRECTION APPROVED»)
 - PHASE 6 — WIREFRAMES + VISUAL PROTOTYPE + PHOTO AUDIT — ✅ APPROVED (2026-10-19; docs/PHASE_6_WIREFRAMES.md + docs/PHASE_6_VISUAL_PROTOTYPE_REVIEW.md + docs/PHOTO_AUDIT.md + docs/PHASE_6_APPROVAL.md; commits «PHASE 6 — WIREFRAMES COMPLETED», «PHASE 6 — VISUAL PROTOTYPE REVIEW COMPLETED», «PHOTO AUDIT — COMPLETED», «PHASE 6 — VISUAL PROTOTYPE AND PHOTO AUDIT APPROVED», «PROJECT CONTACTS AND INQUIRY RULES — APPROVED»)
-- PHASE 7 — PROTOTYPE — ▶ REFINEMENT ВЫПОЛНЕН + HOME VARIANT B СОБРАН (2026-10-26) + NATURE COVER УТВЕРЖДЁН В ВАРИАНТЕ B2 (2026-11-07); остановка на визуальном утверждении владельца; эксперимент по унификации фона отклонён (2026-10-26); commits «PHASE 7 — VISUAL AND UX REFINEMENT COMPLETED», «PHASE 7 — HOME VARIANT B — NATURE COVER», «PHASE 7 — NATURE COVER B2 APPROVED»
+- PHASE 7 — PROTOTYPE — ▶ REFINEMENT ВЫПОЛНЕН + HOME VARIANT B СОБРАН (2026-10-26) + NATURE COVER УТВЕРЖДЁН В ВАРИАНТЕ B2 (2026-11-07) + QC REVIEW PASSED WITH NOTES (2026-11-07; docs/PHASE_7_QC_REVIEW.md); остановка на визуальном утверждении владельца; эксперимент по унификации фона отклонён (2026-10-26); commits «PHASE 7 — VISUAL AND UX REFINEMENT COMPLETED», «PHASE 7 — HOME VARIANT B — NATURE COVER», «PHASE 7 — NATURE COVER B2 APPROVED», «PHASE 7 — QC REVIEW COMPLETED»
 - PHASE 8 — FRONTEND IMPLEMENTATION — ⛔ GATE
 - PHASE 9 — CONTENT INTEGRATION — ⛔ GATE
 - PHASE 10 — QA — (внутри каждой фазы)
@@ -34,7 +34,7 @@
 - ФАКТ: docs/BRAND.md v2 (позиционирование «материал первичен», ToV, brand story без выдумок, 8 gaps G1–G8, вопросы Q1–Q4), docs/AUDIENCE.md v2 (5 сегментов, приоритет 1–2). Открытые решения владельца: CTA, гарантия, публикация цен, месседж «единственный экземпляр».
 
 ## PHASE 4 — INFORMATION ARCHITECTURE (GATE) — ✅ DONE 2026-10-18
-- OBJECTIVE: решает: остаёмся one-page или переходим на многостраничный (каталог → карточка изделия).
+- OBJECTIVE: решает: остаёмся one-page или переходим на многостраничный (каталог → категория → карточка изделия).
 - ФАКТ: одобрена гибридная многостраничная архитектура. OUTPUTS: docs/INFORMATION_ARCHITECTURE.md (sitemap, 2 сценария A/B + прямой вход, структура карточки, mobile IA, URL-структура, CTA-логика, спорные решения S1–S7), docs/UX.md. Каталог: 3 категории / 33 изделия (полки исключены решением владельца).
 
 ## PHASE 5 — DESIGN DIRECTION (GATE) — ✅ APPROVED 2026-10-18
@@ -86,6 +86,13 @@
 - ПРОВЕРКА (2026-11-07): desktop (~1120px) и mobile (~514px) скриншотами; home-variant-b.html, taiga.jpg, logo-badge.svg — HTTP 200; регрессий на других страницах нет.
 - ПРИМЕЧАНИЕ: происхождение taiga.png — UNVERIFIED (атмосферное изображение, не фото изделия); при желании владельца слой заменяется на реальную фотографию тайги без изменения архитектуры. assets/nature-sns.jpeg сохранён, в сцене 1 HOME B больше не используется.
 - СТАТУС: Nature Cover закрыт. STOP GATE PHASE 7 действует: PHASE 8 не начинать до общего утверждения прототипа владельцем.
+
+## PHASE 7 — QC REVIEW (контрольный подэтап) — ✅ DONE 2026-11-07
+- OBJECTIVE: полное QC-ревью прототипа PHASE 7 перед запросом общего утверждения (Категория A, без согласования).
+- ФАКТ: docs/PHASE_7_QC_REVIEW.md. 41 страница: битых ссылок/изображений/якорей — 0; у всех img есть alt; у всех страниц title. Интерактив проверен в браузере: фильтр каталога (7 журнальных / 19 кухонных / 7 эксклюзивных = 33), мобильное меню (открытие + Escape), PDP-галерея (смена фото), предзаполнение формы (?product=SNS027), demo-submit формы без реальной отправки. Контраст основного текста 15.41:1.
+- ЗАМЕЧАНИЯ (не блокирующие, кандидаты в pre-production refinement): A1 — акцентные ссылки 4.45:1 (порог AA 4.5:1); A2 — фильтрам не хватает aria-pressed; A3 — бургеру aria-expanded, меню aria-hidden; A4 — форме связанных label/name/required; A5 — fallback-фон под белым текстом на фото-секциях.
+- РЕЕСТР МАРКЕРОВ: NEEDS CONFIRMATION — 46 вхождений (география мастерской — футер всех страниц + contacts; мессенджер — contacts/index/inquiry; телефон — contacts); PHOTO TO REPLACE — 36 (дисклеймер на 33 PDP + заглушка SNS028); PHOTO TO PRODUCE — 3 (фото производства на index).
+- СТАТУС: PASSED WITH NOTES, блокирующих дефектов нет. STOP GATE PHASE 7 сохраняется: ждём общего утверждения владельца и закрытия открытых вопросов (S2, S7, Q1, Q-geo, Q-messenger, Q-phone).
 
 ## PHASE 8 — FRONTEND IMPLEMENTATION (GATE)
 - OBJECTIVE: внедрение поэтапно (по секциям), без переписывания всего сразу.
